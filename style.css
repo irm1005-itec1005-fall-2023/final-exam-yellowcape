@@ -12,7 +12,7 @@
  * #cdb4db - Lavender Purple
  * #ffc8dd - Pink
  * #ffafcc - Light Pink
- * #bde0fe - Light Blue
+ * #bde0fe - Lightest Blue
  * #a2d2ff - Light Blue
  * #0c0a3e - Dark Purple
  * #797979 - Grey
@@ -37,55 +37,341 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 2rem;
+  margin: 1rem 1rem 9rem 1rem;
 }
 
-.header-logo-styling{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  background-color: black;
-  border-radius: 0.5rem;
-  height: 3rem;
-  width: 3rem;
-  padding: 0.25rem;
-  }
-    .header-logo-styling img{
-      width: 1.5rem;
-      height: 1.5rem;
-      
+    .header-logo-styling{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      background-color: black;
+      border-radius: 0.5rem;
+      height: 2rem;
+      width: 2rem;      
     }
+        .header-logo-styling img{
+          width: 1rem;
+          height: 1rem;
+          
+        }
+
+    .header-contant-us {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+
+      background-color: black;
+      border-radius: 0.5rem;
+      padding: 0.5rem 1rem; 
+
+      color: white;
+      font-size: x-small;
+    }
+
 /* end of header section */
 
+.page-container {
+  margin: 0.25rem;
+}
 
 
 /* top section */
+.top-section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+  .top-section h1 {
+    font-size: 2.5rem;
+    margin: 0.5rem 0;
+    text-align: center;
+    word-break: normal;
+    font-weight: 750;
+  }
+
+    .top-section-subtitle{
+      font-size: 0.75rem;
+      text-align: center;
+      word-break: normal;
+
+      color: rgb(100, 107, 113);
+    }
 /* end of top section */
 
 
 
 /* list of skills */
+.list-of-skills {
+  display: flex;
+  flex-direction: column;
+  margin: 5rem 0;
+}
+
+  .list-of-skills ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0.5rem 0;
+  }
+
+    .list-of-skills li:first-child {
+      display: flex;
+      flex-direction: row;
+      text-align: left;
+      background-color: #cdb4db;
+      border-radius: 0.75rem;
+      padding: 0.5rem 1rem; 
+
+      color: #351547;
+      font-size: small;
+      font-weight: bolder;
+      margin: 0.25rem;
+    }
+
+    .list-of-skills li:first-child + li {
+      display: flex;
+      flex-direction: row;
+      text-align: left;
+      background-color: #ffc8dd;
+      border-radius: 0.5rem;
+      padding: 0.5rem 1rem; 
+
+      color: #351547;
+      font-size: small;
+      font-weight: bolder;
+      margin: 0.25rem;
+    }
+
+    .list-of-skills li:first-child + li + li {
+      display: flex;
+      flex-direction: row;
+      text-align: left;
+      background-color: #ffafcc;
+      border-radius: 0.5rem;
+      padding: 0.5rem 1rem; 
+
+      color: #351547;
+      font-size: small;
+      font-weight: bolder;
+      margin: 0.25rem;
+    }
+
+    .list-of-skills li:first-child + li + li + li {
+      display: flex;
+      flex-direction: row;
+      text-align: left;
+      background-color: #bde0fe;
+      border-radius: 0.5rem;
+      padding: 0.5rem 1rem; 
+
+      color: #351547;
+      font-size: small;
+      font-weight: bolder;
+      margin: 0.25rem;
+    }
+
+    .list-of-skills li:first-child + li + li + li + li {
+      display: flex;
+      flex-direction: row;
+      text-align: left;
+      background-color: #a2d2ff;
+      border-radius: 0.5rem;
+      padding: 0.5rem 1rem; 
+
+      color: #351547;
+      font-size: small;
+      font-weight: bolder;
+      margin: 0.25rem;
+    }
+
+    .list-of-skills li:first-child + li + li + li + li + li {
+      display: flex;
+      flex-direction: row;
+      text-align: left;
+      background-color: #cdb4db;
+      border-radius: 0.5rem;
+      padding: 0.5rem 1rem; 
+
+      color: #351547;
+      font-size: small;
+      font-weight: bolder;
+      margin: 0.25rem;
+    }
 /* end of list of skills */
 
 
 
 /* abt me section */
+.about-me-section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 7rem;
+}
+
+  .about-me-section img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 1rem;
+    height: 400px;
+    width: 400px;
+    margin-bottom: 2rem;
+    object-fit: cover;
+  }
+
+  .about-me-section h2  {
+    font-size: 1.5rem;
+    font-weight: 750;
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+
+  .about-me-section p {
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+
+  .about-me-section h3{
+    display: flex;
+    flex-wrap: nowrap;
+    
+    background-color: #ffafcc;
+    border-radius: 0.75rem;
+    width: 8rem;
+    padding: 0.75rem 1.5rem;
+
+    font-size: small;
+    font-weight: 750;
+  }
+
 /* end of abt me section */
 
 
 
 /* my work section */
+.my-work-section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 7rem;
+}
+
+  .my-work-section h2 {
+    font-size: 2rem;
+    font-weight: 750;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .my-work-section img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 1rem;
+    border: solid 0.3rem black;
+    object-fit: cover;
+    height: 400px;
+    width: 450px;
+    object-position: top;
+  }
+
+  ul li h3{
+    font-size: 1.25rem;
+    font-weight: 750;
+    text-align: left;
+    margin-top: 0.75rem;
+  }
+
+  .languages-used {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 4rem;
+    align-items: center;
+  }
+
+    .individual-lang-used {
+      display: flex;
+      flex-wrap: nowrap;      
+      background-color: #ffafcc;
+      border-radius: 1rem;
+      width: auto;
+      padding: 0.25rem 0.5rem;
+      margin-right: 0.5rem;
+
+      font-size: x-small;
+      color: #351547;
+      font-weight: 700;
+      text-align: center;
+    }
 /* end of my work section */
 
 
 
 /* contact me section */
+.contant-me-section-parent-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #cdb4db;
+  padding: 2.5rem;
+  border-radius: 1rem;
+  margin-bottom: 8rem;
+}
+
+.contant-me-section-parent-container h2 {
+  font-size: 1.5rem;
+  font-weight: 750;
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+.contant-me-section-parent-container p {
+  font-size: 0.75rem;
+  font-weight: 550;
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+.contact-me-2{
+  background-color: black;
+  color: white;
+    border-radius: 0.75rem;
+
+    padding: 0.75rem 1.5rem;
+
+    font-size: small;
+    font-weight: 750;
+}
 /* end of contact me section */
 
 
 
 /* footer section */
+hr {
+  border-top: 1px solid #797979;
+  margin-top: 5rem;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0.25rem;
+}
+
+.footer-section img {
+  height: 1.5rem;
+}
+
+.footer-section p {
+  font-size: 0.5rem;
+  text-align: right;
+}
 /* end of footer section */
 
 
