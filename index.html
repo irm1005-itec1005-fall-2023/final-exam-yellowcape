@@ -32,6 +32,7 @@
 
 
 <body>
+<!-- header section -->
   <header>
     <h2 class="sr-only">Site Header</h2>
     <div class="flex flex-nowrap justify-between m-2 border-2 border-green align-center">
@@ -51,13 +52,26 @@
       </h3>
     </div>
   </header>
+<!-- end of header section -->
+
+
+
+
+
+
+
+
 
 
   <main>
-
     <div class="page-container">
-      <!-- top section -->
-      <div class="">
+
+
+
+
+
+<!-- top section -->
+      <div class="top-section">
         <p class="sr-only">Amy's Web Development Agency
         </p>
 
@@ -66,22 +80,125 @@
 
         <p>Crafting Digital Dreams: Transforming Code into <br> Captivating Experiences - Your Vision, My Expertise.</p>
       </div>
-      <!-- end of top section -->
+<!-- end of top section -->
     
-      <!-- list of skills -->
-      <ul class="mt-5 mb-5">
-        <li>Web Development</li>
-        <li>UI/UX</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>HTML</li>
-        <li>GitHub</li>
-      </ul>
-      <!--end of list of skills  -->
 
-      <!-- about me section -->
-      <img src="./images/about/about.jpg" />
-      <!-- end of abt me section -->
+
+<!-- list of skills -->
+      <div class="list-of-skills">
+        <p class="sr-only">My Skills</p>
+        <ul class="mt-5 mb-5">
+          <li>Web Development</li>
+          <li>UI/UX</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>HTML</li>
+          <li>GitHub</li>
+        </ul>
+      </div>
+<!--end of list of skills  -->
+
+
+
+<!-- about me section -->
+      <div class="about-me-section">
+      <p class="sr-only">About me</p>
+
+      <img src="./images/about/about.jpg" alt="Picture of Amy in business atire with a pink background" />
+
+      <h2 class="font-bold text-2xl text-center leading-relaxed mt-10">Hey, I'm Amy. Are you ready to level up your web project?</h2>
+      <p>I'm a web developer based in Ottawa, Canada. I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. My goal is to always build products that provide pixel-perfect, performant experiences.</p>
+        <h3 class="flex flex-nowrap bg-pink-300 items-center rounded-lg justify-between">
+          <a href="#" class="text-black font-bold align-center p-3 ">Contact me</a>
+        </h3>
+      </div>
+<!-- end of abt me section -->
+
+
+
+<!-- my work section -->
+<div class="my-work-section">
+  <h2>My Work</h2>
+    <div class="work-images">
+      <ul>
+        <li>
+          <img src="./images/work/work-1.png" alt="Screenshot of Tutorial Exercise 03"/>
+          <h3>
+            Tutorial Exercise 03
+          </h3>
+          <div class="languages-used">
+            <p>HTML</p>
+            <p>CSS</p>
+          </div>
+        </li>
+
+        <li>
+          <img src="./images/work/work-2.png" alt="Screenshot of Tutorial Exercise 05"/>
+          <h3>
+            Tutorial Exercise 05
+          </h3>
+          <div class="languages-used">
+            <p>HTML</p>
+            <p>CSS</p>
+          </div>
+        </li>
+
+        <li>
+          <img src="./images/work/work-3.png" alt="Screenshot of Tutorial Exercise 07"/>
+          <h3>
+            Tutorial Exercise 07
+          </h3>
+          <div class="languages-used">
+            <p>HTML</p>
+            <p>CSS</p>
+          </div>
+        </li>
+
+        <li>
+          <img src="./images/work/work-4.png" alt="Screenshot of Tutorial Exercise 09"/>
+          <h3>
+            Tutorial Exercise 09
+          </h3>
+          <div class="languages-used">
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+</div>
+<!-- end of my work section -->
+
+
+<!-- Contact me section -->
+<div class="contant-me-section-parent-container">
+  <h2>Book a call with me</h2>
+  <p>Excited to chat! Whether you have a project in mind or just want to explore possibilities, let's connect. Use the form below to suggest a time, and I'll reach out to confirm. Can't wait to discuss your ideas!</p>
+
+  <h3 class="flex flex-nowrap bg-black items-center rounded-lg justify-between">
+    <a href="#" class="text-white font-bold align-center p-3 ">Contact me</a>
+  </h3>
+
+</div>
+<!-- end of contact me section -->
+
+
+
+<!-- footer section -->
+<p class="sr-only">Site Footer</p>
+<hr class="border-solid border-slate-500 mt-5">
+  <div class="footer-section">
+    <img src="./images/logo/logo-dark.svg" alt="Amy's Web Development Agency Logo"/>
+
+    <p>© 2023 Amy's Web Development Agency</p>
+  </div>
+<!-- end of footer section -->
+
+
+
+
+<!-- below is div for whole page -->
     </div>
 
   </main>
@@ -101,55 +218,12 @@
     # MAIN SECTION
 
 
-    ## SKILLS SECTION
 
-    My Skills (hidden text - not visible on screen)
-    Web Development
-    UI/UX
-    CSS
-    JavaScript
-    HTML
-    GitHub
 
-    ## ABOUT ME SECTION
-
-    About me (hidden text - not visible on screen)
-    Picture of Amy's in business atire with a pink background (<- image alt text <- ./images/about/about.jpg)
-
-    Hey, I'm Amy. Are you ready to level up your web project?
-
-    I'm a web developer based in Ottawa, Canada. I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. My goal is to always build products that provide pixel-perfect, performant experiences.
-
-    Contact me
-
-    ## MY WORK SECTION
-
-    My Work
-
-    Screenshot of Tutorial Exercise 03 (<- image alt text <- ./images/work/work-1.png)
-    Tutorial Exercise 03
-    HTML
-    CSS
-
-    Screenshot of Tutorial Exercise 05 (<- image alt text <- ./images/work/work-2.png)
-    Tutorial Exercise 05
-    HTML
-    CSS
-
-    Screenshot of Tutorial Exercise 07 (<- image alt text <- ./images/work/work-3.png)
-    Tutorial Exercise 07
-    HTML
-    CSS
-
-    Screenshot of Tutorial Exercise 09 (<- image alt text <- ./images/work/work-4.png)
-    Tutorial Exercise 09
-    HTML
-    CSS
-    JavaScript
-
-    Book a call with me
 
     ## CONTACT ME SECTION
+
+        Book a call with me
 
     Excited to chat! Whether you have a project in mind or just want to explore possibilities, let's connect. Use the form below to suggest a time, and I'll reach out to confirm. Can't wait to discuss your ideas!"
 
