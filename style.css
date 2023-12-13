@@ -41,8 +41,8 @@
 }
 
         @media screen and (min-width: 800px) {
-          ..header-logo-and-contant-us {
-            margin: 1rem 4rem;
+          .header-logo-and-contant-us {
+            margin: 1rem 2rem;
           }
         }
 
@@ -81,11 +81,14 @@
 .page-container {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 0 1.0rem;
+  padding: 1.0rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }
         @media screen and (min-width: 800px) {
           .page-container {
-            margin: 4rem;
+            margin: auto;
           }
         }
 
@@ -286,6 +289,11 @@
     margin-bottom: 2rem;
     object-fit: cover;
   }
+          @media screen and (min-width: 800px) {
+            .about-me-section img {
+              margin-right: 2rem;
+            }
+          }
 
   .about-me-section h2  {
     font-size: 1.5rem;
@@ -324,6 +332,14 @@
   flex-direction: column;
   margin-bottom: 7rem;
 }
+        @media screen and (min-width: 800px) {
+          .my-work-section ul {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-gap: 1rem;
+          }
+        }
 
   .my-work-section h2 {
     font-size: 2rem;
