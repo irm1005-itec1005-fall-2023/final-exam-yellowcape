@@ -40,6 +40,12 @@
   margin: 1rem 1rem 9rem 1rem;
 }
 
+        @media screen and (min-width: 800px) {
+          ..header-logo-and-contant-us {
+            margin: 1rem 4rem;
+          }
+        }
+
     .header-logo-styling{
       display: flex;
       flex-direction: row;
@@ -73,8 +79,15 @@
 /* end of header section */
 
 .page-container {
-  margin: 0.25rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1.0rem;
 }
+        @media screen and (min-width: 800px) {
+          .page-container {
+            margin: 4rem;
+          }
+        }
 
 
 /* top section */
@@ -117,6 +130,48 @@
     justify-content: space-between;
     margin: 0.5rem 0;
   }
+
+          @media screen and (min-width: 800px) {
+            .list-of-skills ul {
+              display: grid;
+              flex-direction: grid;
+              text-align: end;
+              grid-template-columns: repeat(6, 1fr);
+              grid-template-rows: 1fr 1fr;
+
+              height: 15rem;
+            }
+
+            .list-of-skills li:first-child{
+              grid-column: 1 / 3;
+              grid-row: 1 / 3 ;
+            }
+            
+            .list-of-skills li:first-child + li {
+              grid-column: 3 / 4;
+              grid-row: 1 / 2 ;
+            }
+
+            .list-of-skills li:first-child + li + li {
+              grid-column: 4 / 5;
+              grid-row: 1 / 2 ;
+            }
+
+            .list-of-skills li:first-child + li + li + li{
+              grid-column: 5 / 7;
+              grid-row: 1 / 2 ;
+            }
+
+            .list-of-skills li:first-child + li + li + li + li {
+              grid-column: 3 / 5;
+              grid-row: 2 / 3 ;
+            }
+
+            .list-of-skills li:first-child + li + li + li + li + li {
+              grid-column: 5 / 7;
+              grid-row: 2 / 3 ;
+            }
+          }
 
     .list-of-skills li:first-child {
       display: flex;
@@ -211,6 +266,15 @@
   flex-direction: column;
   margin-bottom: 7rem;
 }
+          @media screen and (min-width: 800px) {
+            .about-me-section {
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              align-items: center;
+              margin-bottom: 7rem;
+            }
+          }
 
   .about-me-section img {
     display: flex;
@@ -275,8 +339,8 @@
     border-radius: 1rem;
     border: solid 0.3rem black;
     object-fit: cover;
-    height: 400px;
-    width: 450px;
+    height: 300px;
+    width: 600px;
     object-position: top;
   }
 
@@ -412,11 +476,6 @@ body {
  * SHARED STYLES
  */
 
-.page-container {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0 1.0rem;
-}
 
 /*
  * ADD YOUR STYLES HERE
