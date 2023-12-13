@@ -31,12 +31,80 @@
  html {
   font-size: 1.0rem;
 }
+/* header section */
+.header-logo-and-contant-us {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem;
+}
+
+.header-logo-styling{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  border-radius: 0.5rem;
+  height: 3rem;
+  width: 3rem;
+  padding: 0.25rem;
+  }
+    .header-logo-styling img{
+      width: 1.5rem;
+      height: 1.5rem;
+      
+    }
+/* end of header section */
+
+
+
+/* top section */
+/* end of top section */
+
+
+
+/* list of skills */
+/* end of list of skills */
+
+
+
+/* abt me section */
+/* end of abt me section */
+
+
+
+/* my work section */
+/* end of my work section */
+
+
+
+/* contact me section */
+/* end of contact me section */
+
+
+
+/* footer section */
+/* end of footer section */
+
+
 
 body {
   font-family: Arial, Helvetica, sans-serif;
 
   background-color: #f7ead7;
 }
+
+
+
+
+
+
+
+
+
+
 
 /*
  * SR-ONLY
